@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>document.documentElement.classList.add('js');</script>
+<title>Lev Trade Partners | Our Group</title>
+<meta name="description" content="Lev Trade Partners is an independent trading house built on integrity and long-term relationships, with ambitions across energy, media, equipment, and beyond." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<meta property="og:title" content="Lev Trade Partners | Our Group" />
+<meta property="og:description" content="One company. Many markets. One standard." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#0A0D11; --bg-2:#0E1319; --surface:#131A22; --surface-2:#172029;
+  --text:#F4F1EA; --muted:#9AA6B2; --faint:#6B7682;
+  --gold:#C8A45C; --gold-2:#E4CD8E; --gold-soft:rgba(200,164,92,.12);
+  --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14); --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Manrope',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600;display:inline-block;margin-bottom:18px}
+.g{color:var(--gold)}
+h1,h2,h3{font-weight:700;line-height:1.12;letter-spacing:-.02em}
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;padding:15px 28px;border-radius:2px;cursor:pointer;transition:.25s;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#1A140A}
+.btn-gold:hover{background:var(--gold-2);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line-2);color:var(--text)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.arrow{transition:transform .25s}
+.btn:hover .arrow{transform:translateX(4px)}
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.35s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(10,13,17,.82);backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em;font-size:19px}
+.brand .mark{width:34px;height:34px}
+.brand small{font-weight:500;letter-spacing:.2em;font-size:11px;color:var(--muted);text-transform:uppercase}
+.nav-right{display:flex;align-items:center;gap:22px}
+.nav-right .tradelink{font-size:14px;color:var(--muted);font-weight:500;transition:.2s}
+.nav-right .tradelink:hover{color:var(--text)}
+.lang{display:flex;align-items:center;gap:2px;font-size:12px;font-weight:600}
+.lang button{background:none;border:none;color:var(--faint);cursor:pointer;font:inherit;padding:4px 6px;transition:.2s}
+.lang button.active{color:var(--gold)}
+.lang span{color:var(--faint)}
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 80px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(1000px 620px at 78% 12%,rgba(200,164,92,.16),transparent 55%),radial-gradient(900px 700px at 10% 95%,rgba(40,70,90,.28),transparent 60%),linear-gradient(180deg,#0A0D11,#0B0F14 60%,#090C10)}
+.hero-grid{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(circle at 70% 35%,#000,transparent 72%);mask-image:radial-gradient(circle at 70% 35%,#000,transparent 72%)}
+.hero-inner{position:relative;z-index:2;max-width:860px}
+.hero h1{font-size:clamp(40px,6.6vw,78px);letter-spacing:-.03em;margin-bottom:26px}
+.hero p.lead{font-size:clamp(16px,1.5vw,19px);color:var(--muted);max-width:660px;line-height:1.75;margin-bottom:40px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.sec{padding:120px 0}
+.sec-head{max-width:680px;margin-bottom:60px}
+.sec-head.center{margin:0 auto 60px;text-align:center}
+.sec-head h2{font-size:clamp(30px,4vw,46px);margin-bottom:20px}
+.sec-head p{color:var(--muted);font-size:17px;line-height:1.75}
+.divs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.div-card{position:relative;display:block;padding:44px 40px;background:var(--surface);border:1px solid var(--line);border-radius:4px;transition:.35s;overflow:hidden;min-height:230px}
+.div-card::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:.4s}
+.div-card:hover{background:var(--surface-2);transform:translateY(-6px)}
+.div-card:hover::after{width:100%}
+.div-card .tag{position:absolute;top:30px;right:34px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:5px 11px;border-radius:2px}
+.tag.live{background:var(--gold-soft);color:var(--gold-2);border:1px solid rgba(200,164,92,.4)}
+.tag.soon{background:rgba(255,255,255,.04);color:var(--faint);border:1px solid var(--line)}
+.div-card .ico{color:var(--gold);margin-bottom:26px;display:block}
+.div-card h3{font-size:24px;margin-bottom:12px}
+.div-card p{color:var(--muted);font-size:15px;line-height:1.65;max-width:360px}
+.div-card .more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--gold);font-size:13.5px;font-weight:600;letter-spacing:.04em}
+.values{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.val{padding:8px 0}
+.val .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;color:var(--gold);margin-bottom:14px}
+.val h4{font-size:19px;margin-bottom:10px}
+.val p{color:var(--muted);font-size:15px;line-height:1.65}
+.band{padding:120px 0;text-align:center;position:relative;border-top:1px solid var(--line)}
+.band::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 380px at 50% 0%,rgba(200,164,92,.14),transparent 70%)}
+.band-inner{position:relative;z-index:2;max-width:720px;margin:0 auto}
+.band h2{font-size:clamp(30px,4.4vw,48px);margin-bottom:22px}
+.band p{color:var(--muted);font-size:18px;margin-bottom:36px}
+footer{background:var(--bg-2);border-top:1px solid var(--line);padding:60px 0 34px}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
+.foot p{font-size:13px;color:var(--faint)}
+.foot .links{display:flex;gap:26px}
+.foot .links a{font-size:14px;color:var(--muted);transition:.2s}
+.foot .links a:hover{color:var(--gold)}
+.js .reveal{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.16,1,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+@media(max-width:860px){
+  .divs,.val-grid{grid-template-columns:1fr}
+  .nav-right .tradelink{display:none}
+  .sec{padding:84px 0}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="group.html" class="brand" aria-label="Lev Trade Partners home">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="22" stroke="#C8A45C" stroke-width="1.4" opacity=".55"/><path d="M16 31V17" stroke="#C8A45C" stroke-width="2.6" stroke-linecap="round"/><path d="M16 31h11" stroke="#C8A45C" stroke-width="2.6" stroke-linecap="round"/><path d="M22 24l5-6 5 6" stroke="#E4CD8E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>LEV<br><small>Trade Partners</small></span>
+    </a>
+    <div class="nav-right">
+      <a href="index.html" class="tradelink" data-i18n="nav.trading">Trading desk</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="en" class="active">EN</button><span>/</span><button data-lang="fr">FR</button>
+      </div>
+      <a href="#contact" class="btn btn-gold" style="padding:11px 22px" data-i18n="nav.cta">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow" data-i18n="hero.eyebrow">The Lev Trade Partners group</span>
+    <h1 data-i18n="hero.title">One company. Many markets. <span class="g">One standard.</span></h1>
+    <p class="lead" data-i18n="hero.sub">Lev Trade Partners is an independent trading house built on integrity and long-term relationships. Energy is where we start, with ambitions that reach into media, equipment, and beyond.</p>
+    <div class="hero-cta">
+      <a href="#divisions" class="btn btn-gold" data-i18n="hero.cta1">What we do <span class="arrow">&rarr;</span></a>
+      <a href="index.html" class="btn btn-ghost" data-i18n="hero.cta2">Visit the trading desk</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="divisions">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="div.eyebrow">What we do</span>
+      <h2 data-i18n="div.title">Focused work, one set of values.</h2>
+      <p data-i18n="div.sub">We are building deliberately. Energy trading is live today. The rest follows only when it can meet the same standard.</p>
+    </div>
+    <div class="divs">
+      <a href="index.html" class="div-card reveal">
+        <span class="tag live" data-i18n="div.live">Active</span>
+        <svg class="ico" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18"/><path d="M6 18V9M11 18V5M16 18v-6M21 18v-9"/></svg>
+        <h3 data-i18n="div.1t">Energy &amp; Commodities</h3>
+        <p data-i18n="div.1d">Independent physical trading and distribution of base oils, petrochemicals, and refined products for Africa and emerging markets.</p>
+        <span class="more" data-i18n="div.visit">Visit the trading desk <span class="arrow">&rarr;</span></span>
+      </a>
+      <div class="div-card reveal">
+        <span class="tag soon" data-i18n="div.soon">In development</span>
+        <svg class="ico" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/><circle cx="8" cy="14" r="1.6"/><path d="M12 13h6M12 16h4"/></svg>
+        <h3 data-i18n="div.2t">Media</h3>
+        <p data-i18n="div.2d">Media and communication solutions, building brands and audiences in fast-growing markets.</p>
+      </div>
+      <div class="div-card reveal">
+        <span class="tag soon" data-i18n="div.soon">In development</span>
+        <svg class="ico" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+        <h3 data-i18n="div.3t">Equipment</h3>
+        <p data-i18n="div.3d">Sourcing and supply of industrial equipment, built on the same trusted logistics relationships.</p>
+      </div>
+      <div class="div-card reveal">
+        <span class="tag soon" data-i18n="div.next">What's next</span>
+        <svg class="ico" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>
+        <h3 data-i18n="div.4t">And more</h3>
+        <p data-i18n="div.4d">We grow only into ventures that share our standard for integrity and quality. Quietly, and on our terms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="sec wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="val.eyebrow">What we stand for</span>
+      <h2 data-i18n="val.title">The same principles in everything we do.</h2>
+    </div>
+    <div class="val-grid">
+      <div class="val reveal"><div class="n">01</div><h4 data-i18n="val.1t">Integrity</h4><p data-i18n="val.1d">We do what we say. Honest dealing is the foundation of every relationship we build.</p></div>
+      <div class="val reveal"><div class="n">02</div><h4 data-i18n="val.2t">Reliability</h4><p data-i18n="val.2d">Partners count on us to deliver, in full and on schedule, across complex markets.</p></div>
+      <div class="val reveal"><div class="n">03</div><h4 data-i18n="val.3t">Long-term vision</h4><p data-i18n="val.3d">We build for decades, not single deals, investing in people, relationships, and trust.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contact">
+  <div class="wrap band-inner reveal">
+    <span class="eyebrow" data-i18n="band.eyebrow">Work with us</span>
+    <h2 data-i18n="band.title">Let's build something lasting.</h2>
+    <p data-i18n="band.sub">For supply, partnerships, or new ventures, we would be glad to talk.</p>
+    <a href="mailto:hello@levtradepartners.com" class="btn btn-gold">hello@levtradepartners.com <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <p data-i18n="foot.copy">&copy; 2026 Lev Trade Partners. All rights reserved.</p>
+    <div class="links">
+      <a href="index.html" data-i18n="foot.trading">Trading desk</a>
+      <a href="#divisions" data-i18n="foot.what">What we do</a>
+      <a href="mailto:hello@levtradepartners.com">hello@levtradepartners.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const I18N={en:{},fr:{
+  "nav.trading":"Bureau de négoce","nav.cta":"Nous contacter",
+  "hero.eyebrow":"Le groupe Lev Trade Partners",
+  "hero.title":"Une entreprise. Plusieurs marchés. <span class='g'>Une exigence.</span>",
+  "hero.sub":"Lev Trade Partners est une maison de négoce indépendante, fondée sur l'intégrité et des relations de long terme. L'énergie est notre point de départ, avec des ambitions qui s'étendent aux médias, aux équipements et au-delà.",
+  "hero.cta1":"Ce que nous faisons <span class='arrow'>&rarr;</span>","hero.cta2":"Voir le bureau de négoce",
+  "div.eyebrow":"Ce que nous faisons","div.title":"Un métier ciblé, des valeurs communes.",
+  "div.sub":"Nous construisons avec méthode. Le négoce d'énergie est actif aujourd'hui. Le reste ne suivra que lorsqu'il atteindra la même exigence.",
+  "div.live":"Actif","div.soon":"En développement","div.next":"À venir","div.visit":"Voir le bureau de négoce <span class='arrow'>&rarr;</span>",
+  "div.1t":"Énergie &amp; matières premières","div.1d":"Négoce et distribution physique indépendants d'huiles de base, de produits pétrochimiques et raffinés, pour l'Afrique et les marchés émergents.",
+  "div.2t":"Médias","div.2d":"Solutions médias et communication, pour bâtir des marques et des audiences sur les marchés à forte croissance.",
+  "div.3t":"Équipements","div.3d":"Sourcing et fourniture d'équipements industriels, appuyés sur les mêmes relations logistiques de confiance.",
+  "div.4t":"Et plus encore","div.4d":"Nous ne grandissons que vers des activités qui partagent notre exigence d'intégrité et de qualité. Discrètement, et à nos conditions.",
+  "val.eyebrow":"Ce que nous défendons","val.title":"Les mêmes principes en toute chose.",
+  "val.1t":"Intégrité","val.1d":"Nous faisons ce que nous disons. La loyauté est le socle de chaque relation que nous bâtissons.",
+  "val.2t":"Fiabilité","val.2d":"Nos partenaires comptent sur nous pour livrer, en intégralité et à l'heure, sur des marchés complexes.",
+  "val.3t":"Vision de long terme","val.3d":"Nous construisons pour des décennies, pas pour un seul deal, en investissant dans les hommes, les relations et la confiance.",
+  "band.eyebrow":"Travailler avec nous","band.title":"Bâtissons quelque chose de durable.",
+  "band.sub":"Pour un approvisionnement, un partenariat ou une nouvelle activité, nous serions ravis d'échanger.",
+  "foot.copy":"&copy; 2026 Lev Trade Partners. Tous droits réservés.","foot.trading":"Bureau de négoce","foot.what":"Ce que nous faisons"
+}};
+document.querySelectorAll('[data-i18n]').forEach(el=>{I18N.en[el.getAttribute('data-i18n')]=el.innerHTML;});
+function setLang(l){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');const v=(I18N[l]&&I18N[l][k])||I18N.en[k];if(v!=null)el.innerHTML=v;});
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+if((navigator.language||'en').toLowerCase().startsWith('fr')) setLang('fr');
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>40));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
