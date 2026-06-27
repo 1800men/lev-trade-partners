@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script>document.documentElement.classList.add('js');</script>
+<script>var d=document.documentElement;d.classList.add('js');setTimeout(function(){d.classList.remove('js');},2500);</script>
 <title>Lev Trade Partners | Independent Energy Trading</title>
 <meta name="description" content="Lev Trade Partners is an independent physical trading and distribution house for base oils, petrochemicals, and refined products, across Africa, Europe, Asia, and the Americas." />
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -782,7 +782,7 @@ const cio=new IntersectionObserver((es)=>es.forEach(e=>{
   const end=+el.dataset.count, suf=el.dataset.suffix||''; let t0=null;
   const step=(t)=>{if(!t0)t0=t; const p=Math.min((t-t0)/1100,1); el.textContent=Math.round(p*end)+suf; if(p<1)requestAnimationFrame(step);};
   requestAnimationFrame(step);
-},{threshold:.5});
+}),{threshold:.5});
 counters.forEach(c=>cio.observe(c));
 
 const form=document.getElementById('contactForm');
